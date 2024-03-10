@@ -1,7 +1,22 @@
 import path from "path";
 // import { postgresAdapter } from '@payloadcms/db-postgres'
 import {
-  lexicalEditor
+  AlignFeature,
+  BlockQuoteFeature,
+  BlocksFeature,
+  BoldFeature,
+  CheckListFeature,
+  HeadingFeature,
+  IndentFeature,
+  InlineCodeFeature,
+  ItalicFeature,
+  lexicalEditor,
+  LinkFeature,
+  OrderedListFeature,
+  ParagraphFeature,
+  RelationshipFeature,
+  UnorderedListFeature,
+  UploadFeature,
 } from "@payloadcms/richtext-lexical";
 //import { slateEditor } from '@payloadcms/richtext-slate'
 import { mongooseAdapter } from "@payloadcms/db-mongodb";
