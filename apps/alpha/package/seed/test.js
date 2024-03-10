@@ -6,7 +6,7 @@
 
 import { getPayload } from 'payload'
 
-import payloadConfig from '../../payload.config.js'
+import buildConfig from '../../payload.config.js'
 
 // export const getPayloadClient = () => getPayload({ config: payloadConfig })
 
@@ -15,7 +15,7 @@ const createHomePage = async () => {
   const config = buildConfig();
   console.log("config",config)
   
-  const payload = await getPayload({ config: payloadConfig })
+  const payload = await getPayload({ config: config })
   // await payload.init({
   //   config: config,
   // });
