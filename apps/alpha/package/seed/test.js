@@ -15,7 +15,7 @@ const createHomePage = async () => {
   const config = buildConfig();
   console.log("config",config)
   
-  const payload = await getPayload({ config: configPromise })
+  const payload = await getPayload({ config: payloadConfig })
   // await payload.init({
   //   config: config,
   // });
