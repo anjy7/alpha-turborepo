@@ -1,0 +1,43 @@
+{
+  "name": "@repo/npm-payload",
+  "version": "2.6.3",
+  "type": "module",
+  "source": "src/index.ts",
+  "main": "dist/index.cjs",
+  "module": "dist/index.module.js",
+  "unpkg": "dist/index.umd.js",
+  "scripts": {
+    "build": "microbundle",
+    "dev": "microbundle watch",
+    "update": "dotenv go run package/script.go",
+    "postinstall": "dotenv go run package/script.go",
+    "posti": "dotenv go run package/script.go",
+    "root": "node package/test.js",
+    "my-script": "bash scripts/getenv.sh"
+  },
+  "devDependencies": {
+    "dotenv": "^16.4.5",
+    "microbundle": "^0.15.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anjy7/npm-test"
+  },
+  "dependencies": {
+    "payload": "3.0.0-alpha.46",
+    "cross-env": "^7.0.3",
+    "dotenv-cli": "^7.3.0",
+    "findup": "^0.1.5",
+    "@payloadcms/db-mongodb": "3.0.0-alpha.46",
+    "@payloadcms/db-postgres": "3.0.0-alpha.46",
+    "@payloadcms/next": "3.0.0-alpha.46",
+    "@payloadcms/richtext-lexical": "3.0.0-alpha.46",
+    "@payloadcms/richtext-slate": "3.0.0-alpha.46",
+    "dotenv": "^16.4.5",
+    "next": "14.2.0-canary.10",
+    "@repo/npm-payload": "workspace:*",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "sharp": "0.32.6"
+  }
+}
