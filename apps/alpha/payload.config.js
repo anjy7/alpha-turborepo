@@ -44,7 +44,7 @@ export default buildConfig({
         },
         {
           name: "content",
-          type: "richText",
+          type: "text",
         },
       ],
     },

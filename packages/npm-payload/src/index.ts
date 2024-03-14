@@ -20,7 +20,7 @@ const Navbar: CollectionConfig = {
       label: 'Option 2',
     },
   ],
-  timestamps: false,
+  timestamps: true,
 };
 
 export default Navbar;
