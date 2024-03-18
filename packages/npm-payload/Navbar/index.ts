@@ -1,21 +1,26 @@
-import type { GlobalConfig } from 'payload/types'
-import link from '../src/fields/link'
+import { CollectionConfig } from 'payload/types';
 
-export const Navbar: GlobalConfig = {
-    access: {
-      read: () => true,
+const Navbar: CollectionConfig = {
+  slug: 'navbar',
+  admin: {
+    useAsTitle: 'name',
+  },
+  access: {
+    read: () => true,
+  },
+  fields: [
+    {
+      name: 'first',
+      type: 'text',
+      label: 'Option 1',
     },
-    fields: [
-      {
-        name: 'navItems',
-        fields: [
-          link({
-            appearances: false,
-          }),
-        ],
-        maxRows: 6,
-        type: 'array',
-      },
-    ],
-    slug: 'header',
-  }
+    {
+      name: 'second',
+      type: 'text',
+      label: 'Option 2',
+    },
+  ],
+  timestamps: true,
+};
+
+export default Navbar;

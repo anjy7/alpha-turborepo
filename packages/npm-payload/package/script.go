@@ -95,16 +95,16 @@ func main() {
 	///===================================================
 	// run the node script to seed the data using local api
 	// cmd3 := exec.Command("tsx","./package/seed/seed.js")
-	// cmd3.Stdin = strings.NewReader(string(output1))
 	// fmt.Println("Input1:", cmd3.Stdin)
     // output2, err2 := cmd3.CombinedOutput()
     // if err2 != nil {
-    //     fmt.Println("Error:", err2)
-    //     return
-    // }
-    // fmt.Println("Output2+:", string(output2))
-
+		//     fmt.Println("Error:", err2)
+		//     return
+		// }
+		// fmt.Println("Output2+:", string(output2))
+		
 	cmd3 := exec.Command("node","./express/seed.js")
+	cmd3.Stdin = strings.NewReader(string(output))
     output2, err2 := cmd3.CombinedOutput()
     if err2 != nil {
         fmt.Println("Error:", err2)
